@@ -1,6 +1,6 @@
 const UserAgent = require('./lib/useragent');
 
-module.exports = async (ctx, next) => {
+export default async (ctx, next) => {
   const { header } = ctx.request;
   const source = header['user-agent'];
 
