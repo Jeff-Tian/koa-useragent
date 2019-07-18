@@ -5,18 +5,18 @@
   "scripts": {
     "test": "ava",
     "lint": "eslint ./",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release --branch temp/x"
   },
   "keywords": [
     "koa",
     "middleware",
     "useragent"
   ],
-  "author": "Boris Ryabov <rv.boris@yandex.ru>",
+  "author": "Jeff Tian <jeff.tian@outlook.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rvboris/koa-useragent.git"
+    "url": "https://github.com/jeff-tian/koa-useragent.git"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
