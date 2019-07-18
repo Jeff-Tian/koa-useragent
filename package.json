@@ -1,5 +1,5 @@
 {
-  "name": "koa-useragent",
+  "name": "koa-useragent-x",
   "description": "Koa.js middleware for useragent detection",
   "main": "index.js",
   "scripts": {
@@ -43,6 +43,6 @@
     }
   },
   "dependencies": {
-    "express-useragent": "^1.0.13"
+    "express-useragent-x": "^1.0.13"
   }
 }
