@@ -1,6 +1,6 @@
 const useragent = require('express-useragent-x');
 
-class UserAgent {
+export default class UserAgent {
   private readonly agent: any
 
   constructor(source = 'unknown') {

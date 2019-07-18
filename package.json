@@ -5,7 +5,7 @@
   "scripts": {
     "test": "ava",
     "lint": "tslint ./",
-    "build": "(rm index.d.ts index.js lib/useragent.d.ts lib/useragent.js || echo 'deleted') && tsc --declaration index.ts && tsc --declaration lib/useragent.ts",
+    "build": "(rm index.d.ts index.js lib/useragent.d.ts lib/useragent.js || echo 'deleted') && tsc --declaration -p tsconfig.json",
     "ci": "npm run build && npm test",
     "semantic-release": "semantic-release --branch temp/x"
   },

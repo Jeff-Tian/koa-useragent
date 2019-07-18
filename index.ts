@@ -1,10 +1,10 @@
-const UserAgent = require('./lib/useragent');
+import UserAgent from './lib/useragent'
 
-export default async (ctx, next) => {
-  const { header } = ctx.request;
-  const source = header['user-agent'];
+export default async (ctx: any, next: () => Promise<any>) => {
+    const {header} = ctx.request
+    const source = header['user-agent']
 
-  ctx.userAgent = new UserAgent(source, header);
+    ctx.userAgent = new UserAgent(source)
 
-  await next();
-};
+    await next()
+}
